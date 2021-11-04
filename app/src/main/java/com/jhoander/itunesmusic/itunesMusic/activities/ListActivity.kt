@@ -1,4 +1,4 @@
-package com.jhoander.itunesmusic.activities
+package com.jhoander.itunesmusic.itunesMusic.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

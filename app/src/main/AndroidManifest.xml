@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ItunesMusic" >
-        <activity android:name="com.jhoander.itunesmusic.activities.ListActivity" >
+        <activity android:name="com.jhoander.itunesmusic.itunesMusic.activities.ListActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
