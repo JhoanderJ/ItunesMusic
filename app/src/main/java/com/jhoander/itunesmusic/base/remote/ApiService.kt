@@ -6,6 +6,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 object ApiService {
     @JvmOverloads fun <T> build(
@@ -31,6 +32,6 @@ object ApiService {
     private fun activateDebug(client: OkHttpClient.Builder) {
         val logging = HttpLoggingInterceptor()
         logging.level = HttpLoggingInterceptor.Level.BODY
-        client.interceptors().add(logging)
+        client.addInterceptor(logging)
     }
 }
