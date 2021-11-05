@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ItunesMusic</string>
+    <string name="notFound">No se encontro ningun resultado</string>
+    <string name="ErrorLoading">error cargando , intente nuevamente.</string>
 </resources>
