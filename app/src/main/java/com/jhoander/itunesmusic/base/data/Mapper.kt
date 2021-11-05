@@ -32,28 +32,4 @@ abstract class Mapper<T1,T2> {
 
         return returnValues
     }
-
-    fun map(values: Map<String, T1>?): Map<String, T2> {
-        val returnValues = HashMap<String, T2>()
-
-        if (values != null) {
-            for ((key, value) in values) {
-                returnValues[key] = map(value)
-            }
-        }
-
-        return returnValues
-    }
-
-    fun reverseMap(values: Map<String, T2>?): Map<String, T1> {
-        val returnValues = HashMap<String, T1>()
-
-        if (values != null) {
-            for ((key, value) in values) {
-                returnValues[key] = reverseMap(value)
-            }
-        }
-
-        return returnValues
-    }
 }
